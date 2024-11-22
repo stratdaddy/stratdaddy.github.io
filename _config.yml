@@ -3,3 +3,6 @@ plugins:
 - jekyll-remote-theme
 title: Strat Daddy Custom Guitars
 baseurl: ""
+collections:
+  posts:
+    output: true
