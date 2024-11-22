@@ -1,0 +1,19 @@
+---
+layout: default
+title: Build Journal
+---
+
+<h1>Build Journal</h1>
+<p>Follow our journey in building custom guitars, one step at a time.</p>
+
+<div class="posts">
+  {% for post in site.posts %}
+    <div class="post">
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p><small>{{ post.date | date: "%B %d, %Y" }}</small></p>
+      <p>{{ post.excerpt }}</p>
+      <a href="{{ post.url | relative_url }}">Read more</a>
+    </div>
+    <hr>
+  {% endfor %}
+</div>

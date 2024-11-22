@@ -1,0 +1,145 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #2f2f2f;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  margin: 0 1rem;
+}
+
+.nav-list a {
+  color: #f4f1ea;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: #f08a24;
+}
+
+/* Hero Section Styling */
+.hero {
+  text-align: center;
+  background-color: #2f2f2f;
+  color: #f4f1ea;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 400;
+}
+
+.intro {
+  margin: 2rem auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Gallery Page Styling */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: 200px;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item p {
+  margin-top: 0.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #333;
+}
+
+/* General Responsive Image Settings */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Navbar Adjustments */
+  .navbar {
+    padding: 0.5rem;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list li {
+    margin: 0.5rem 0;
+  }
+
+  /* Font Size Adjustments */
+  h1, .hero h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p, .nav-list a {
+    font-size: 1rem;
+  }
+
+  /* Gallery Adjustments */
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .gallery-item img {
+    max-width: 100%;
+    height: auto;
+  }
+}
